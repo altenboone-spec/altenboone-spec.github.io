@@ -49,7 +49,7 @@ Any other static server works the same way (e.g. `npx serve`, VS Code Live Serve
 
 Keep posts newest-first in the listing. Paths in blog posts use `../` for CSS, JS, and site nav (Home / Books / About).
 
-Sample posts are clearly marked as replaceable in their body text.
+Example posts are clearly marked as replaceable in their body text.
 
 ## Amazon links
 
