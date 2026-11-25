@@ -809,3 +809,66 @@ main {
   letter-spacing: 0.05em;
   font-size: 0.9rem;
 }
+
+
+/* —— Reviews —— */
+.review-callout {
+  margin: 2.25rem 0 0;
+  padding: 1.5rem 1.6rem 1.4rem;
+  max-width: 40rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--amber);
+}
+
+.review-kicker,
+.review-links-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 0.75rem;
+}
+
+.review-callout blockquote {
+  margin: 0 0 1.15rem;
+}
+
+.review-callout blockquote p {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.review-callout blockquote footer {
+  font-size: 0.9rem;
+  font-style: normal;
+  color: var(--text-muted);
+}
+
+.review-callout cite {
+  font-style: italic;
+}
+
+.review-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.15rem;
+  margin: 0;
+  padding: 0;
+}
+
+.review-links a {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.book-review-note {
+  margin-top: 0.85rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
