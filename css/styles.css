@@ -884,7 +884,7 @@ main {
 
 
 /* ============================================================
-   Redesign preview additions: cover art, author photo, desk
+   Redesign preview additions: cover art, author photo
    ============================================================ */
 
 /* —— Hero cover fan (home) —— */
@@ -1019,30 +1019,6 @@ main {
   object-fit: cover;
 }
 
-.desk-figure {
-  margin: 3rem 0 0;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-  background: var(--bg-card);
-}
-
-.desk-figure img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 7;
-  object-fit: cover;
-  object-position: center 55%;
-}
-
-.desk-figure figcaption {
-  padding: 0.8rem 1.1rem;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.1rem;
-  color: var(--text-muted);
-}
 
 /* —— Lighter panels —— */
 .section-alt { background: rgba(70, 90, 150, 0.4); }
