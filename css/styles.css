@@ -903,22 +903,23 @@ main {
 }
 
 .hero-covers .hc {
-  width: 25%;
-  max-width: 150px;
+  width: 22%;
+  max-width: 136px;
   aspect-ratio: 2 / 3;
   object-fit: cover;
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.28);
   box-shadow: 0 14px 30px rgba(6, 10, 30, 0.55);
-  margin-left: -6%;
+  margin-left: -6.5%;
 }
 
 .hero-covers .hc:first-child { margin-left: 0; }
-.hero-covers .hc-1 { transform: rotate(-7deg) translateY(14px); }
-.hero-covers .hc-2 { transform: rotate(-3.5deg) translateY(4px); }
-.hero-covers .hc-3 { transform: scale(1.12); z-index: 3; }
-.hero-covers .hc-4 { transform: rotate(3.5deg) translateY(4px); z-index: 2; }
-.hero-covers .hc-5 { transform: rotate(7deg) translateY(14px); z-index: 1; }
+.hero-covers .hc-1 { transform: rotate(-8deg) translateY(16px); }
+.hero-covers .hc-2 { transform: rotate(-5deg) translateY(8px); }
+.hero-covers .hc-3 { transform: rotate(-2deg) translateY(2px); }
+.hero-covers .hc-4 { transform: scale(1.12); z-index: 4; }
+.hero-covers .hc-5 { transform: rotate(2deg) translateY(2px); z-index: 3; }
+.hero-covers .hc-6 { transform: rotate(5deg) translateY(8px); z-index: 1; }
 
 @media (min-width: 900px) {
   .hero {
@@ -936,11 +937,11 @@ main {
     position: absolute;
     right: max(1rem, calc((100% - var(--max)) / 2));
     top: 50%;
-    width: 30rem;
+    width: 34rem;
     margin: 0;
     transform: translateY(-50%);
   }
-  .hero-covers .hc { max-width: 160px; }
+  .hero-covers .hc { max-width: 148px; }
 }
 
 /* —— Page banners get a soft cover-art strip —— */
@@ -955,11 +956,12 @@ main {
   position: absolute;
   inset: 0 0 0 40%;
   background:
-    url("../images/covers/jacobs-rest.jpg") 0% 30% / 20% auto no-repeat,
-    url("../images/covers/the-scrapyard.jpg") 25% 30% / 20% auto no-repeat,
-    url("../images/covers/a-stitch-in-the-dark.jpg") 50% 30% / 20% auto no-repeat,
-    url("../images/covers/terminus.jpg") 75% 30% / 20% auto no-repeat,
-    url("../images/covers/antiseptic-illusion.jpg") 100% 30% / 20% auto no-repeat;
+    url("../images/covers/jacobs-rest.jpg") 0% 30% / 16.66% auto no-repeat,
+    url("../images/covers/the-scrapyard.jpg") 20% 30% / 16.66% auto no-repeat,
+    url("../images/covers/terminus.jpg") 40% 30% / 16.66% auto no-repeat,
+    url("../images/covers/the-turned-king.jpg") 60% 30% / 16.66% auto no-repeat,
+    url("../images/covers/a-stitch-in-the-dark.jpg") 80% 30% / 16.66% auto no-repeat,
+    url("../images/covers/antiseptic-illusion.jpg") 100% 30% / 16.66% auto no-repeat;
   opacity: 0.35;
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 55%);
   mask-image: linear-gradient(90deg, transparent 0%, #000 55%);
@@ -980,11 +982,12 @@ main {
   inset: 0 0 auto 0;
   height: 3.25rem;
   background:
-    url("../images/covers/jacobs-rest.jpg") 0% 30% / 20% auto no-repeat,
-    url("../images/covers/the-scrapyard.jpg") 25% 30% / 20% auto no-repeat,
-    url("../images/covers/a-stitch-in-the-dark.jpg") 50% 30% / 20% auto no-repeat,
-    url("../images/covers/terminus.jpg") 75% 30% / 20% auto no-repeat,
-    url("../images/covers/antiseptic-illusion.jpg") 100% 30% / 20% auto no-repeat;
+    url("../images/covers/jacobs-rest.jpg") 0% 30% / 16.66% auto no-repeat,
+    url("../images/covers/the-scrapyard.jpg") 20% 30% / 16.66% auto no-repeat,
+    url("../images/covers/terminus.jpg") 40% 30% / 16.66% auto no-repeat,
+    url("../images/covers/the-turned-king.jpg") 60% 30% / 16.66% auto no-repeat,
+    url("../images/covers/a-stitch-in-the-dark.jpg") 80% 30% / 16.66% auto no-repeat,
+    url("../images/covers/antiseptic-illusion.jpg") 100% 30% / 16.66% auto no-repeat;
   opacity: 0.55;
 }
 
