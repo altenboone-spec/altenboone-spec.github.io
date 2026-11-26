@@ -2,25 +2,26 @@
    Dark literary aesthetic: charcoal, blood-amber, elegant serif */
 
 :root {
-  --bg-deep: #0a0908;
-  --bg: #12100e;
-  --bg-elevated: #1a1714;
-  --bg-card: #1e1a17;
-  --border: #2e2924;
-  --border-subtle: #252119;
-  --text: #e8e2d9;
-  --text-muted: #a89f93;
-  --text-faint: #6b635a;
-  --accent: #c45c3e;
-  --accent-soft: #a84a32;
-  --accent-glow: rgba(196, 92, 62, 0.25);
-  --amber: #c9a45c;
-  --amber-dim: #8a7340;
+  /* Midnight-blue palette: brighter than black, still moody */
+  --bg-deep: #25315d;
+  --bg: #27345f;
+  --bg-elevated: #34457a;
+  --bg-card: #2d3c6a;
+  --border: #5b6ea3;
+  --border-subtle: #425287;
+  --text: #f7f2ea;
+  --text-muted: #d3d7e6;
+  --text-faint: #b0b9d6;
+  --accent: #ff9468;
+  --accent-soft: #f27c4d;
+  --accent-glow: rgba(255, 148, 104, 0.28);
+  --amber: #f4cb7c;
+  --amber-dim: #e3bf7a;
   --serif: "Cormorant Garamond", "Libre Baskerville", Georgia, "Times New Roman", serif;
   --sans: "Source Sans 3", "Inter", system-ui, -apple-system, sans-serif;
   --max: 1100px;
-  --radius: 4px;
-  --shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  --radius: 6px;
+  --shadow: 0 14px 40px rgba(8, 12, 32, 0.45);
   --header-h: 4rem;
 }
 
@@ -34,6 +35,8 @@
 
 html {
   scroll-behavior: smooth;
+  background: #2a3868;
+  min-height: 100%;
 }
 
 body {
@@ -42,6 +45,12 @@ body {
   line-height: 1.7;
   color: var(--text);
   background: var(--bg-deep);
+  background-image:
+    radial-gradient(ellipse 90% 50% at 85% 0%, rgba(255, 148, 104, 0.16), transparent 60%),
+    radial-gradient(ellipse 80% 45% at 0% 35%, rgba(104, 140, 255, 0.18), transparent 60%),
+    linear-gradient(180deg, #33437a 0%, #2a3868 55%, #2d3b6c 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -86,7 +95,7 @@ main {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 9, 8, 0.92);
+  background: rgba(37, 49, 93, 0.94);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-subtle);
 }
@@ -169,7 +178,7 @@ main {
   background:
     radial-gradient(ellipse 80% 60% at 70% 20%, var(--accent-glow), transparent 55%),
     radial-gradient(ellipse 50% 40% at 10% 80%, rgba(201, 164, 92, 0.08), transparent 50%),
-    linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
+    linear-gradient(180deg, #3b4d86 0%, #2e3d6e 100%);
   pointer-events: none;
 }
 
@@ -238,16 +247,16 @@ main {
 }
 
 .btn-primary {
-  background: var(--accent);
-  color: #fff;
-  border-color: var(--accent);
+  background: var(--amber);
+  color: #1c2548;
+  border-color: var(--amber);
 }
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
-  background: var(--accent-soft);
-  color: #fff;
-  box-shadow: 0 0 24px var(--accent-glow);
+  background: #ffdc96;
+  color: #1c2548;
+  box-shadow: 0 0 24px rgba(244, 203, 124, 0.4);
 }
 
 .btn-ghost {
@@ -263,7 +272,7 @@ main {
 }
 
 .btn-amazon {
-  background: #1a1714;
+  background: rgba(244, 203, 124, 0.1);
   color: var(--amber);
   border-color: var(--amber-dim);
 }
@@ -329,7 +338,7 @@ main {
   aspect-ratio: 2 / 3;
   max-width: 280px;
   background:
-    linear-gradient(160deg, #2a1810 0%, #12100e 45%, #1a0c0a 100%);
+    linear-gradient(160deg, #3a4a80 0%, #27345f 100%);
   border: 1px solid var(--border);
   border-radius: 2px;
   box-shadow: var(--shadow);
@@ -383,7 +392,7 @@ main {
   border-radius: 2px;
   margin: -0.25rem 0 1.25rem;
   background: var(--bg-elevated);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 28px rgba(8, 12, 32, 0.45);
 }
 
 .book-cover img {
@@ -472,11 +481,11 @@ main {
   border: 1px solid var(--border);
 }
 
-.tag-scifi { color: #8ab4c4; border-color: #3a4a52; }
-.tag-horror { color: #c48a7a; border-color: #4a3028; }
-.tag-fantasy { color: #a89ac4; border-color: #3a3450; }
-.tag-anthology { color: #c4b48a; border-color: #4a4030; }
-.tag-novella { color: #8ac49a; border-color: #304a38; }
+.tag-scifi { color: #a9e0f2; border-color: #5a8aa0; }
+.tag-horror { color: #ffb4a0; border-color: #a66a5a; }
+.tag-fantasy { color: #cfc1f5; border-color: #7a6cb0; }
+.tag-anthology { color: #f0dca8; border-color: #9a8a58; }
+.tag-novella { color: #a8ecbc; border-color: #5a9a70; }
 
 /* —— Book grid —— */
 .book-grid {
@@ -508,7 +517,7 @@ main {
 }
 
 .book-card:hover {
-  border-color: #3e3530;
+  border-color: var(--amber-dim);
   box-shadow: var(--shadow);
 }
 
@@ -709,7 +718,7 @@ main {
 /* —— Footer —— */
 .site-footer {
   border-top: 1px solid var(--border-subtle);
-  background: var(--bg-deep);
+  background: #1f2a52;
   padding: 2.5rem 0;
   margin-top: auto;
 }
@@ -747,8 +756,8 @@ main {
   position: absolute;
   left: -9999px;
   top: 0;
-  background: var(--accent);
-  color: #fff;
+  background: var(--amber);
+  color: #1c2548;
   padding: 0.5rem 1rem;
   z-index: 200;
 }
@@ -772,7 +781,7 @@ main {
     right: 0;
     flex-direction: column;
     align-items: stretch;
-    background: rgba(10, 9, 8, 0.98);
+    background: rgba(37, 49, 93, 0.98);
     border-bottom: 1px solid var(--border);
     padding: 0.75rem;
     gap: 0.15rem;
@@ -871,4 +880,184 @@ main {
   margin-top: 0.85rem;
   font-size: 0.9rem;
   color: var(--text-muted);
+}
+
+
+/* ============================================================
+   Redesign preview additions: cover art, author photo, desk
+   ============================================================ */
+
+/* —— Hero cover fan (home) —— */
+.hero {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent);
+}
+
+.hero-covers {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: min(100% - 2rem, var(--max));
+  margin: 2.5rem auto 0;
+  padding: 0 0 0.5rem;
+}
+
+.hero-covers .hc {
+  width: 25%;
+  max-width: 150px;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 14px 30px rgba(6, 10, 30, 0.55);
+  margin-left: -6%;
+}
+
+.hero-covers .hc:first-child { margin-left: 0; }
+.hero-covers .hc-1 { transform: rotate(-7deg) translateY(14px); }
+.hero-covers .hc-2 { transform: rotate(-3.5deg) translateY(4px); }
+.hero-covers .hc-3 { transform: scale(1.12); z-index: 3; }
+.hero-covers .hc-4 { transform: rotate(3.5deg) translateY(4px); z-index: 2; }
+.hero-covers .hc-5 { transform: rotate(7deg) translateY(14px); z-index: 1; }
+
+@media (min-width: 900px) {
+  .hero {
+    min-height: 31rem;
+    display: flex;
+    align-items: center;
+  }
+  .hero .hero-inner {
+    margin-left: max(1rem, calc((100% - var(--max)) / 2));
+    margin-right: 0;
+    width: 38rem;
+    max-width: 38rem;
+  }
+  .hero-covers {
+    position: absolute;
+    right: max(1rem, calc((100% - var(--max)) / 2));
+    top: 50%;
+    width: 30rem;
+    margin: 0;
+    transform: translateY(-50%);
+  }
+  .hero-covers .hc { max-width: 160px; }
+}
+
+/* —— Page banners get a soft cover-art strip —— */
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(120deg, #34457a 0%, #27345f 70%);
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 40%;
+  background:
+    url("../images/covers/jacobs-rest.jpg") 0% 30% / 20% auto no-repeat,
+    url("../images/covers/the-scrapyard.jpg") 25% 30% / 20% auto no-repeat,
+    url("../images/covers/a-stitch-in-the-dark.jpg") 50% 30% / 20% auto no-repeat,
+    url("../images/covers/terminus.jpg") 75% 30% / 20% auto no-repeat,
+    url("../images/covers/antiseptic-illusion.jpg") 100% 30% / 20% auto no-repeat;
+  opacity: 0.35;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 55%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 55%);
+  pointer-events: none;
+}
+
+.page-hero > .wrap { position: relative; z-index: 1; }
+
+/* —— Footer cover strip —— */
+.site-footer {
+  position: relative;
+  padding-top: 5.5rem;
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3.25rem;
+  background:
+    url("../images/covers/jacobs-rest.jpg") 0% 30% / 20% auto no-repeat,
+    url("../images/covers/the-scrapyard.jpg") 25% 30% / 20% auto no-repeat,
+    url("../images/covers/a-stitch-in-the-dark.jpg") 50% 30% / 20% auto no-repeat,
+    url("../images/covers/terminus.jpg") 75% 30% / 20% auto no-repeat,
+    url("../images/covers/antiseptic-illusion.jpg") 100% 30% / 20% auto no-repeat;
+  opacity: 0.55;
+}
+
+/* —— Writer / author photo —— */
+.writer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 720px) {
+  .writer-grid {
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+    gap: 3rem;
+  }
+}
+
+.author-photo {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 3px solid var(--amber);
+  box-shadow: var(--shadow), 0 0 0 8px rgba(244, 203, 124, 0.12);
+}
+
+.author-photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.desk-figure {
+  margin: 3rem 0 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  background: var(--bg-card);
+}
+
+.desk-figure img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+.desk-figure figcaption {
+  padding: 0.8rem 1.1rem;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+/* —— Lighter panels —— */
+.section-alt { background: rgba(70, 90, 150, 0.4); }
+
+.book-card {
+  background: linear-gradient(160deg, #354677 0%, #2b3a68 100%);
+  box-shadow: 0 6px 20px rgba(8, 12, 32, 0.25);
+}
+
+.review-callout { background: #33447a; }
+.btn-ghost { border-color: #7d8fc4; }
+.nav a:hover, .nav a:focus-visible, .nav a[aria-current="page"] { background: rgba(255, 255, 255, 0.1); }
+
+@media (max-width: 640px) {
+  .site-footer::before { height: 2.5rem; }
+  .site-footer { padding-top: 4.5rem; }
+  .hero { padding-top: 3.5rem; }
 }
